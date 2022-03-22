@@ -20,14 +20,19 @@ const heading = document.querySelector("#main-heading");
 
 // =======================================
 
-const listOfToDos = ["Washing the dog", "Training", "Cleaning"];
+const listOfToDos = [];
 
 function todosItems(arr) {
   let items = "";
   for (let i = 0; i < arr.length; i++) {
-    items += `<li>${arr[i]}</li>`;
+    items += `<li> ${arr[i]} </li>`;
   }
   return items;
 }
 
-todos.innerHTML = todosItems(listOfToDos);
+button.addEventListener("click", function () {
+  const item = input.value;
+  listOfToDos.push(item);
+  input.value = "";
+  todos.innerHTML = todosItems(listOfToDos);
+});
