@@ -1,1 +1,10 @@
+input {
+  width: 30%;
+  margin: 1rem 0;
+  border: 2px solid rgb(194, 194, 194);
+  border-radius: 5px;
+}
 
+li {
+  list-style-type: none;
+}

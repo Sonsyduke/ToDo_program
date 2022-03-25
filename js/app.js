@@ -11,7 +11,7 @@ const listOfToDos = [];
 function todosItems(arr) {
   let items = "";
   for (let i = 0; i < arr.length; i++) {
-    items += `<li> ${arr[i]} </li>`;
+    items += `<li class="fs-3"> ${arr[i]} </li>`;
   }
   return items;
 }

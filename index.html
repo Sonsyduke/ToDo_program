@@ -15,13 +15,24 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="main-heading">Plan your day ahead</h1>
-      <input type="text" id="input-field" />
-      <button class="submit">Add</button>
-      <button class="deleteBtn" id="deleteFirst">Delete first</button>
-      <button class="deleteBtn" id="deleteLast">Delete last</button>
+      <h1 id="main-heading" class="text-center">Plan your day ahead</h1>
+      <div class="input text-center">
+        <input type="text" id="input-field" />
+      </div>
+      <div class="buttons text-center mb-3">
+        <button class="submit btn btn-outline-primary btn-lg px-5">Add</button>
+        <button
+          class="deleteBtn btn btn-outline-danger btn-lg"
+          id="deleteFirst"
+        >
+          Delete first
+        </button>
+        <button class="deleteBtn btn btn-outline-danger btn-lg" id="deleteLast">
+          Delete last
+        </button>
+      </div>
 
-      <ul class="todos"></ul>
+      <ul class="todos text-center"></ul>
     </div>
 
     <!-- Bootstrap JS CDN -->
